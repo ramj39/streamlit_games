@@ -2,7 +2,17 @@ import streamlit as st
 import numpy as np
 import random
 import time
-
+st.markdown(
+    """
+    <style>
+    .stDataFrame td {
+        background-color: white !important;
+        color: black !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # Set page configuration
 st.set_page_config(
     page_title="Sudoku Game",
@@ -581,5 +591,6 @@ st.write("developed by Subramanian Ramajayam")
 # Footer
 st.divider()
 st.caption("🔢 Sudoku Game • All numbers now have same font size • Blue = your numbers, Gray = given numbers")
+
 
 
